@@ -1,0 +1,90 @@
+h1,h2 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(60, 171, 207);
+    animation-name: pop;
+    animation-duration: 1s;
+}
+footer{
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    height: 50px;
+    width: 100%;
+    color: rgb(201, 201, 201);
+    padding-top: 0.5%;
+  }
+  #bg_img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+}
+  img,video{
+    box-shadow: 10px 10px 10px rgba(41, 41, 41, 0.21);
+  }
+  #ad{
+    padding-left: 26%;
+  }
+  #Jayden,#Aseem,#Enzo,#Sai,#Seonghoon,#Eryk{
+    box-shadow: 10px 10px 10px rgba(41, 41, 41, 0.21);
+    animation-name: pop, slide;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+  }
+  #Jayden:hover,#Aseem:hover,#Enzo:hover,#Sai:hover,#Seonghoon:hover,#Eryk:hover{
+    transform: scale(1.08);
+    transition-duration: 0.6s;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transform: scale(1);
+  transition: 1s;
+  background-color: rgba(216, 216, 216, 0.25);
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: rgb(150, 150, 150);
+  font-weight: bold;
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 13px 16px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(1);
+  transition: 1s;
+}
+li a:hover {
+  background-color: #5577b4;
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+@keyframes pop{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes slide{
+  from{    
+    transform: translateX(-800px);
+  }
+  to{
+    transform: translateX(0.1px);
+  }
+}
